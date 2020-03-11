@@ -52,6 +52,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
  - Improved inference performance for models with multiple action branches. (#3598)
  - Fixed an issue when using GAIL with less than `batch_size` number of demonstrations. (#3591)
  - The interfaces to the `SideChannel` classes (on C# and python) have changed to use new  `IncomingMessage` and `OutgoingMessage` classes. These should make reading and writing data to the channel easier. (#3596)
+ - Changed the Product Name in the example environments to remove spaces, so that the default build executable file doesn't contain spaces.  (#3612)
 
 ## [0.14.1-preview] - 2020-02-25
 
