@@ -10,12 +10,17 @@ public class Ball3DAgent : Agent
     Rigidbody m_BallRb;
     FloatPropertiesChannel m_ResetParams;
 
-    public override void Initialize()
+    private void Start()
     {
         m_BallRb = ball.GetComponent<Rigidbody>();
-        m_ResetParams = Academy.Instance.FloatProperties;
-        SetResetParameters();
     }
+
+    //public override void Initialize()
+    //{
+    //    m_BallRb = ball.GetComponent<Rigidbody>();
+    //    m_ResetParams = Academy.Instance.FloatProperties;
+    //    SetResetParameters();
+    //}
 
     public override void CollectObservations(VectorSensor sensor)
     {
